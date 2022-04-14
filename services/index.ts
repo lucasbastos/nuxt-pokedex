@@ -9,7 +9,7 @@ export const instance = axios.create({
 })
 
 export async function getPokemonAll() {
-    const response = await instance.get('pokemon?limit=100&offset=0')
+    const response = await instance.get('pokemon?limit=151&offset=0')
     return response.data
 }
 
